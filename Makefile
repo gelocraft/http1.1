@@ -3,8 +3,6 @@ CFLAGS = -std=c99 -Wall -Wextra
 BINARY = grassfed-http
 OBJECTS = $(patsubst %.c,%.o,$(shell find -name "*.c"))
 
-.PHONY: all clean
-
 .PHONY: all
 all: $(BINARY)
 
